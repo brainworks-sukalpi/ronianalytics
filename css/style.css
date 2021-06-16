@@ -979,6 +979,24 @@ a:focus {
     color: #231f20;
 }
 
+.whyUsTextDiv {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+.whyUsTextDiv1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.whyUsText {
+    color: #231f20;
+}
+
 /*******************************/
 /********* Banner CSS **********/
 /*******************************/
@@ -1534,7 +1552,7 @@ a:focus {
 .footer {
     position: relative;
     margin-top: 45px;
-    background: #EF233C;
+    background: #231f20;
 }
 
 .footer .container-fluid {
@@ -1569,7 +1587,7 @@ a:focus {
 
 .footer .footer-menu p {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 20px;
     padding: 0 15px;
