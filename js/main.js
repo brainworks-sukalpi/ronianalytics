@@ -65,7 +65,7 @@
             typeSpeed: 100,
             backSpeed: 20,
             smartBackspace: false,
-            loop: true
+            loop: false
         });
     }
     
