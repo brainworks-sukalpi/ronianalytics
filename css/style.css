@@ -91,7 +91,7 @@ a:focus {
     width: 45px;
     height: 45px;
     border: 5px solid #dddddd;
-    border-top: 5px solid #EF233C;
+    border-top: 5px solid #00aef6;
     border-radius: 50%;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
@@ -165,7 +165,7 @@ a:focus {
     margin-top: 0;
     border: 0;
     border-radius: 0;
-    background: #f8f9fa;
+    background: #ffffff;
 }
 
 @media (min-width: 992px) {
@@ -422,17 +422,27 @@ a:focus {
     }
 }
 
-.homeClass {
-    background-color: #ffffff;
-    background: url(../img/Lines_Blue.png);
-    background-size:contain;
+.homeBackground {
+    background-image: url(../img/Lines_White.png), linear-gradient(#00aef6, #00aef6) ;
+    background-repeat: repeat, no-repeat;
+    background-size: 350px, cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.homeTextDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .homeText {
     font-size: 50px;
-    font-weight: 700;
-    color: #00aef6;
+    font-weight: 500;
+    color: #ffffff;
     text-align: center;
+    z-index: 10000;
 }
 
 
@@ -464,7 +474,7 @@ a:focus {
     top: 11px;
     right: 0;
     left: -30px;
-    background: #EF233C;
+    background: #00aef6;
     z-index: -1;
 }
 
@@ -475,7 +485,7 @@ a:focus {
     height: 3px;
     top: 11px;
     left: 3px;
-    background: #EF233C;
+    background: #00aef6;
     z-index: 1;
 }
 
@@ -768,7 +778,7 @@ a:focus {
 }
 
 .service .service-item:hover {
-    box-shadow: inset 800px 0 0 0 #EF233C;
+    box-shadow: inset 800px 0 0 0 #00aef6;
 }
 
 .service .service-icon {
@@ -778,19 +788,28 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #EF233C;
+    border: 1px solid #00aef6;
     background: #ffffff;
 }
 
 .service .service-icon i {
     position: relative;
     font-size: 60px;
-    color: #EF233C;
+    color: #231f20;
     transition: .3s;
 }
 
-.service .service-item:hover i {
-    font-size: 75px;
+.service .service-icon img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    color: #231f20;
+    transition: .3s;
+}
+
+.service .service-item:hover img {
+    width: 120px;
+    height: 120px;
 }
 
 .service .service-text {
@@ -834,6 +853,7 @@ a:focus {
 /*******************************/
 .portfolio {
     position: relative;
+    margin-top: 20px;
     padding: 45px 0 15px 0;
     height: 100vh;
     background: url(../img/Asset\ 2.png);
@@ -939,6 +959,20 @@ a:focus {
     background: transparent;
     box-shadow: inset 0 0 0 0 #EF233C;
     border-color: #EF233C;
+}
+
+.aboutTextDiv {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+.aboutTextDiv1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .aboutText {
