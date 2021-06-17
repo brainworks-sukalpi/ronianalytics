@@ -2,13 +2,16 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Roni Analytics</title>
+        <title>DevFolio - Developer Portfolio Template</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Free Website Template" name="keywords">
         <meta content="Free Website Template" name="description">
 
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
         <!-- CSS Libraries -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
@@ -22,27 +25,6 @@
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="51">
-
-        <div class="hero ">
-            <div class="container ">
-                <div class="row align-items-center ">
-                    <div class="col-sm-12 col-md-6 d-none d-md-block ">
-                        <div class="hero-image wow slideInRight " data-wow-delay="0.1s">
-                            <img src="img/symbol.svg" alt="Hero Image">
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 heroText ">
-                        <div class="hero-content ">
-                            <div class="hero-text ">
-                                <h2></h2>
-                                <div class="typed-text">Roni Analytics</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- Nav Bar Start -->
         <div class="navbar navbar-expand-lg bg-light navbar-light">
             <div class="container-fluid">
@@ -53,16 +35,16 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                        <a href="#home" class="nav-item nav-link">Home</a>
-                        <!-- <a href="#about" class="nav-item nav-link">About</a>
-                        <a href="#service" class="nav-item nav-link">Service</a>
-                        <a href="#experience" class="nav-item nav-link">Experience</a> -->
+                        <a href="#home" class="nav-item nav-link active">Home</a>
                         <a href="#about" class="nav-item nav-link">About</a>
-                        <a href="#ourSolution" class="nav-item nav-link">Our Solutions</a>
-                        <a href="#whyus" class="nav-item nav-link">Why Us</a>
+                        <a href="#service" class="nav-item nav-link">Service</a>
+                        <a href="#experience" class="nav-item nav-link">Experience</a>
+                        <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+                        <a href="#price" class="nav-item nav-link">Price</a>
+                        <a href="#review" class="nav-item nav-link">Review</a>
+                        <a href="#team" class="nav-item nav-link">Team</a>
+                        <a href="#blog" class="nav-item nav-link">Blog</a>
                         <a href="#contact" class="nav-item nav-link">Contact</a>
-                        <!-- <a href="#blog" class="nav-item nav-link">Blog</a>
-                        <a href="#contact" class="nav-item nav-link">Contact</a> -->
                     </div>
                 </div>
             </div>
@@ -70,22 +52,49 @@
         <!-- Nav Bar End -->
 
 
-        <!-- Hero Start -->
-        <div class="hero homeBackground" id="home">
-            <div class="container-fluid homeClass">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-12 homeTextDiv">
-                        <h2 class="homeText wow zoomIn" data-wow-delay="0.1s">Empowering investors with insights <br>
-                            using Proprietary AI technology</h2>
+        <!-- Home Start -->
+        <div class="hero" id="home">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <p></p>
+                                <h1>Roni Analytics LLP</h1>
+                                <h2></h2>
+                                <div class="typed-text">Empowering investors with insights using Proprietary AI technology</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-none d-md-block">
+                        <div class="hero-image wow zoomIn">
+                            <img src="img/symbol.svg" alt="Hero Image">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Hero End -->
+        <!-- Home End -->
 
+        <!-- About us End -->
+        <div class="banner wow zoomIn" data-wow-delay="0.1s" id="about">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Know more</p>
+                    <h2>About <span>Us</span></h2>
+                </div>
+                <div class="container banner-text">
+                    <p>
+                        Roni Analytics has developed tools that investors can use to make informed decisions on how to handle their finances. To facilitate this, Roni Analytics has developed Roni Artificial Intelligence (Roni AI) - a proprietary AI tool that draws information about financial markets and provides intelligent insights, predictions, forecasts about them. This helps users to protect their investments and make better decisions that in turn helps the financial ecosystem.
+                    </p>
+                    <a class="btn">Click to know more</a>
+                </div>
+            </div>
+        </div>
+        <!-- About us End -->
 
         <!-- About Start -->
-        <!-- <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+        <!-- <div class="about wow fadeInUp" data-wow-delay="0.1s" id="">
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -138,8 +147,75 @@
         </div> -->
         <!-- About End -->
         
+        
+        <!-- Service Start -->
+        <div class="service" id="service">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>What I do</p>
+                    <h2>Awesome Quality Services</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fa fa-laptop"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Web Design</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fa fa-laptop-code"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Web Development</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Apps Design</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fab fa-apple"></i>
+                            </div>
+                            <div class="service-text">
+                                <h3>Apps Development</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+        
+        
          <!-- Experience Start -->
-        <!-- <div class="experience" id="experience">
+        <div class="experience" id="experience">
             <div class="container">
                 <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                     <p>My Resume</p>
@@ -208,12 +284,12 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- Job Experience End -->
         
         
         <!-- Banner Start -->
-        <!-- <div class="banner wow zoomIn" data-wow-delay="0.1s">
+        <div class="banner wow zoomIn" data-wow-delay="0.1s">
             <div class="container">
                 <div class="section-header text-center">
                     <p>Reasonable Price</p>
@@ -226,137 +302,120 @@
                     <a class="btn">Pricing Plan</a>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- Banner End -->
 
 
         <!-- Portfolio Start -->
-        <div class="portfolio" id="about">
-            <div class="banner wow zoomIn" data-wow-delay="0.1s">
-                <div class="container">
-                    <div class="section-header text-center">
-                        <h2>About Us</h2>
-                    </div>
-                    <div class="container banner-text wow slideInRight" data-wow-delay="0.2s">
-                        <p>
-                            Roni Analytics has developed tools that investors can use to make informed decisions on how to handle their finances. To facilitate this, Roni Analytics has developed Roni Artificial Intelligence (Roni AI) - a proprietary AI tool that draws information about financial markets and provides intelligent insights, predictions, forecasts about them. This helps users to protect their investments and make better decisions that in turn helps the financial ecosystem. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Portfolio End -->
-
-        <!-- Service Start -->
-        <div class="service" id="ourSolution">
+        <div class="portfolio" id="portfolio">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p></p>
-                    <h2>Our Solutions</h2>
+                    <p>My Portfolio</p>
+                    <h2>My Excellent Portfolio</h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <img src="./img/Vectors-04.png" alt="Roni Ai">
-                            </div>
-                            <div class="service-text">
-                                <h3>Roni Ai</h3>
-                                <p>
-                                    AI/ML based software leveraging financial market data
-                                    in real-time to produce reliable and actionable insights.<br>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <img src="./img/Vectors-02.png" alt="Roni Ai">
-                            </div>
-                            <div class="service-text">
-                                <h3>Signal Pulse</h3>
-                                <p>
-                                    Data service providing signals from financial markets:
-                                    Risk/Fuel meters
-                                    Indexes
-                                    Flow analysis
-                                    VC wallet holding analysis
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <img src="./img/Vectors-03.png" alt="Roni Ai">
-                            </div>
-                            <div class="service-text">
-                                <h3>The Daily Report</h3>
-                                <p>
-                                    Daily free newsletter providing daily insights from
-                                    around the financial world to users’ inbox.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <img src="./img/Vectors-01.png" alt="Roni Ai">
-                            </div>
-                            <div class="service-text">
-                                <h3>Analysed</h3>
-                                <p>
-                                    A service providing daily, weekly and monthly data and analysis to users.
-                                </p>
-                            </div>
-                        </div>
+                    <div class="col-12">
+                        <ul id="portfolio-filter">
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter=".filter-1">Web Design</li>
+                            <li data-filter=".filter-2">Mobile Apps</li>
+                            <li data-filter=".filter-3">Game Dev</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Service End -->
-
-        <!-- Portfolio Start -->
-        <div class="portfolio" id="whyus">
-            <div class="banner wow zoomIn" data-wow-delay="0.1s">
-                <div class="container">
-                    <div class="section-header text-center">
-                        <h2>Why Us</h2>
+                <div class="row portfolio-container">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/portfolio-1.jpg" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>eCommerce Website</h3>
+                                <a class="btn" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="container banner-text wow slideInLeft" data-wow-delay="0.2s">
-                        <p>
-                            Roni Analytics has developed tools that investors can use to make informed decisions on how to handle their finances. To facilitate this, Roni Analytics has developed Roni Artificial Intelligence (Roni AI) - a proprietary AI tool that draws information about financial markets and provides intelligent insights, predictions, forecasts about them. This helps users to protect their investments and make better decisions that in turn helps the financial ecosystem. 
-                        </p>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/portfolio-2.jpg" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Product Landing Page</h3>
+                                <a class="btn" href="img/portfolio-2.jpg" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/portfolio-3.jpg" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>JavaScript quiz game</h3>
+                                <a class="btn" href="img/portfolio-3.jpg" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/portfolio-4.jpg" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>JavaScript drawing</h3>
+                                <a class="btn" href="img/portfolio-4.jpg" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/portfolio-5.jpg" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Social Mobile Apps</h3>
+                                <a class="btn" href="img/portfolio-5.jpg" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/portfolio-6.jpg" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Company Website</h3>
+                                <a class="btn" href="img/portfolio-6.jpg" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Portfolio End -->
-        
         
         
         <!-- Banner Start -->
-        <!-- <div class="banner wow zoomIn" data-wow-delay="0.1s">
-            <div class="container"> -->
-                <!-- <div class="section-header text-center">
+        <div class="banner wow zoomIn" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="section-header text-center">
                     <p>Awesome Discount</p>
                     <h2>Get <span>30%</span> Discount</h2>
-                </div> -->
-                <!-- <div class="container banner-text">
+                </div>
+                <div class="container banner-text">
                     <p>
-                        Roni Analytics has developed tools that investors can use to make informed decisions on how to handle their finances. To facilitate this, Roni Analytics has developed Roni Artificial Intelligence (Roni AI) - a proprietary AI tool that draws information about financial markets and provides intelligent insights, predictions, forecasts about them. This helps users to protect their investments and make better decisions that in turn helps the financial ecosystem. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. 
                     </p>
+                    <a class="btn">Order Now</a>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- Banner End -->
         
         
         <!-- Price Start -->
-        <!-- <div class="price" id="price">
+        <div class="price" id="price">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                     <p>Pricing Plan</p>
@@ -449,12 +508,12 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- Price End -->
         
         
         <!-- Testimonial Start -->
-        <!-- <div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
+        <div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
             <div class="container">
                 <div class="testimonial-icon">
                     <i class="fa fa-quote-left"></i>
@@ -498,12 +557,12 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- Testimonial End -->
 
 
         <!-- Team Start -->
-        <!-- <div class="team" id="team">
+        <div class="team" id="team">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                     <p>My Team</p>
@@ -592,12 +651,12 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- Team End -->
         
         
         <!-- Contact Start -->
-        <!-- <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
+        <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
             <div class="container-fluid">
                 <div class="container">
                     <div class="row align-items-center">
@@ -631,12 +690,12 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- Contact End -->
 
 
         <!-- Blog Start -->
-        <!-- <div class="blog" id="blog">
+        <div class="blog" id="blog">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                     <p>From Blog</p>
@@ -685,19 +744,20 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- Blog End -->
 
 
         <!-- Footer Start -->
-        <div class="footer wow fadeIn" data-wow-delay="0.3s" id="contact">
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
             <div class="container-fluid">
                 <div class="container">
                     <div class="footer-info">
-                        <h3>Roni Analytics</h3>
+                        <h2>Kate Winslet</h2>
+                        <h3>123 Street, New York, USA</h3>
                         <div class="footer-menu">
                             <p>+012 345 67890</p>
-                            <p>Ronyanalytics@gmail.com</p>
+                            <p>info@example.com</p>
                         </div>
                         <div class="footer-social">
                             <a href=""><i class="fab fa-twitter"></i></a>
@@ -709,7 +769,7 @@
                     </div>
                 </div>
                 <div class="container copyright">
-                    <p>&copy; <a href="#">Roni Analytics</a>, All Right Reserved | Designed By <a href="https://htmlcodex.com">SBW.</a></p>
+                    <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved | Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
                 </div>
             </div>
         </div>
@@ -717,7 +777,7 @@
         
         
         <!-- Back to top button -->
-        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
         
         
         <!-- Pre Loader -->
