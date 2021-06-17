@@ -226,7 +226,13 @@ a:focus {
     }
     
     .navbar .navbar-brand {
-        color: #EF233C;
+        color: #00aef6;
+        margin: 0;
+        font-size: 30px;
+        line-height: 0px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        transition: .5s;
     }
     
     .navbar .navbar-nav {
@@ -441,7 +447,7 @@ a:focus {
     top: 11px;
     right: 0;
     left: -30px;
-    background: #EF233C;
+    background: #00aef6;
     z-index: -1;
 }
 
@@ -452,7 +458,7 @@ a:focus {
     height: 3px;
     top: 11px;
     left: 3px;
-    background: #EF233C;
+    background: #00aef6;
     z-index: 1;
 }
 
@@ -734,7 +740,7 @@ a:focus {
     position: relative;
     width: 100%;
     height: 100vh;
-    padding: 45px 0 15px 0;
+    padding: 12vh 0 15px 0;
 }
 
 .service .service-item {
@@ -747,7 +753,7 @@ a:focus {
 }
 
 .service .service-item:hover {
-    box-shadow: inset 800px 0 0 0 #EF233C;
+    box-shadow: inset 800px 0 0 0 #00aef6;
 }
 
 .service .service-icon {
@@ -757,15 +763,28 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #EF233C;
+    border: 1px solid #231f20;
     background: #ffffff;
 }
 
 .service .service-icon i {
     position: relative;
     font-size: 60px;
-    color: #EF233C;
+    color: #00aef6;
     transition: .3s;
+}
+
+.service .service-icon img {
+    position: relative;
+    width: 120px;
+    height: auto;
+    color: #00aef6;
+    transition: .3s;
+}
+
+.service .service-item:hover img {
+    width: 140px;
+    height: auto;
 }
 
 .service .service-item:hover i {
@@ -922,13 +941,13 @@ a:focus {
     position: relative;
     width: 100%;
     height: 100vh;
-    margin: 0px 0;
+    margin: 0 0;
     padding: 90px 0;
     background: #00aef6;
-    background-repeat: no-repeat;
-    background-size: 300px;
-    background-position-y: center;
-    background-position-x: -10vw;
+}
+
+.whyusBanner {
+    margin-top: 10vh;
 }
 
 .banner .container {
@@ -1136,7 +1155,7 @@ a:focus {
 }
 
 .team .team-text h2 {
-    color: #EF233C;
+    color: #00aef6;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 5px;
@@ -1175,7 +1194,7 @@ a:focus {
 }
 
 .team .team-item:hover {
-    box-shadow: inset 800px 0 0 0 #EF233C;
+    box-shadow: inset 800px 0 0 0 #00aef6;
 }
 
 .team .team-item:hover .team-img img {
@@ -1222,10 +1241,11 @@ a:focus {
 /******* Testimonial CSS *******/
 /*******************************/
 .testimonial {
+    margin-top: 10px;
+    height: 100vh;
     position: relative;
-    margin: 45px 0;
     padding: 90px 0;
-    background: #EF233C;
+    background: #00aef6;
 }
 
 .testimonial .container {
@@ -1277,14 +1297,14 @@ a:focus {
 }
 
 .testimonial .testimonial-text h3 {
-    color: #EF233C;
+    color: #00aef6;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
 .testimonial .testimonial-text h4 {
-    color: #666666;
+    color: #231f20;
     font-size: 14px;
     margin-bottom: 0;
 }
@@ -1474,7 +1494,7 @@ a:focus {
 .footer {
     position: relative;
     margin-top: 45px;
-    background: #EF233C;
+    background: #d1d3d4;
 }
 
 .footer .container-fluid {
@@ -1491,14 +1511,14 @@ a:focus {
     margin-bottom: 20px;
     font-size: 30px;
     font-weight: 700;
-    color: #ffffff;
+    color: #231f20;
 }
 
 .footer .footer-info h3 {
     margin-bottom: 25px;
     font-size: 22px;
     font-weight: 600;
-    color: #ffffff;
+    color: #231f20;
 }
 
 .footer .footer-menu {
@@ -1508,12 +1528,12 @@ a:focus {
 }
 
 .footer .footer-menu p {
-    color: #ffffff;
+    color: #231f20;
     font-size: 22px;
     font-weight: 600;
     line-height: 20px;
     padding: 0 15px;
-    border-right: 1px solid #ffffff;
+    border-right: 1px solid #231f20;
 }
 
 .footer .footer-menu p:last-child {
@@ -1532,7 +1552,7 @@ a:focus {
 .footer .footer-social a i {
     margin-right: 15px;
     font-size: 20px;
-    color: #ffffff;
+    color: #231f20;
     transition: .3s;
 }
 
@@ -1541,7 +1561,7 @@ a:focus {
 }
 
 .footer .footer-social a:hover i {
-    color: #414141;
+    color: #808285;
 }
 
 .footer .copyright {
@@ -1564,7 +1584,7 @@ a:focus {
 
 .footer .copyright p {
     margin: 0;
-    color: #ffffff;
+    color: #231f20;
 }
 
 .footer .copyright .col-md-6:last-child p {
@@ -1572,12 +1592,12 @@ a:focus {
 }
 
 .footer .copyright p a {
-    color: #ffffff;
+    color: #231f20;
     font-weight: 600;
 }
 
 .footer .copyright p a:hover {
-    color: #414141;
+    color: #808285;
 }
 
 @media (max-width: 575.98px) {
