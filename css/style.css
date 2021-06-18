@@ -511,11 +511,6 @@ a:focus {
     width: 100%;
     padding: 60px 0 60px 0;
     display: flex;
-    background: url(../img/Pattern-01.png), url(../img/Pattern-01.png);
-    background-position-x: -77vw, 85vw;
-    background-position-y: 40vh, -70vh;
-    background-repeat: no-repeat, no-repeat;
-    background-size: cover, cover;
     align-items: center;
     justify-content: center;
 }
@@ -612,11 +607,7 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 60px 0;
-    background: url(../img/Lines_White.png), url(../img/Lines_White.png), #00aef6;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 400px, 400px;
-    background-position-x: -4vw, 85vw;
-    background-position-y: -10vh, 40vh;
+    background: #00aef6;
     display: flex;
     justify-content: center;
     align-items: center;
