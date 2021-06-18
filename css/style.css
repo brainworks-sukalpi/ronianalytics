@@ -2,9 +2,9 @@
 /********* General CSS *********/
 /*******************************/
 body {
-    color: #797979;
+    color: #231f20;
     background: #ffffff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 h1,
@@ -13,18 +13,18 @@ h3,
 h4,
 h5, 
 h6 {
-    color: #414141;
+    color: #231f20;
 }
 
 a {
-    color: #313131;
+    color: #231f20;
     transition: .3s;
 }
 
 a:hover,
 a:active,
 a:focus {
-    color: #EF233C;
+    color: #00aef6;
     outline: none;
     text-decoration: none;
 }
@@ -46,7 +46,7 @@ a:focus {
     color: #ffffff;
     background: #00aef6;
     border: 2px solid transparent;
-    border-radius: 50%;
+    border-radius: 0;
     box-shadow: inset 0 0 0 50px #00aef6;
     transition: ease-out 0.3s;
     -webkit-transition: ease-out 0.3s;
@@ -91,7 +91,7 @@ a:focus {
     width: 45px;
     height: 45px;
     border: 5px solid #dddddd;
-    border-top: 5px solid #EF233C;
+    border-top: 5px solid #00aef6;
     border-radius: 50%;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
@@ -105,6 +105,28 @@ a:focus {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+.btn1 {
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background: #00aef6;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 50px #00aef6;
+    transition: ease-out 0.3s;
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+}
+
+.btn1:hover {
+    color: #00aef6;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #00aef6; 
+    border-color: #00aef6;
 }
 
 .back-to-top {
@@ -121,10 +143,6 @@ a:focus {
     z-index: 9;
 }
 
-.btn .back-to-top {
-    border-radius: 50%;
-}
-
 .back-to-top i {
     color: #ffffff;
 }
@@ -133,6 +151,18 @@ a:focus {
     color: #231f20;
 }
 
+.animation {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animationLogo {
+    width: 1000px;
+    height: auto;
+}
 
 /**********************************/
 /*********** Nav Bar CSS **********/
@@ -260,8 +290,8 @@ a:focus {
     overflow: hidden;
     background: url(../img/Lines_Blue.png), linear-gradient(#ffffff, #ffffff);
     background-position: center;
-    background-repeat: repeat;
-    background-size: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero .container-fluid {
@@ -736,11 +766,12 @@ a:focus {
 /********* Service CSS *********/
 /*******************************/
 .service {
-    /* top: 10vh; */
     position: relative;
     width: 100%;
-    height: 100vh;
-    padding: 12vh 0 15px 0;
+    height: 100vh !important;
+    padding: 15px 0 15px 0;
+    display: flex;
+    align-items: center;
 }
 
 .service .service-item {
@@ -937,17 +968,25 @@ a:focus {
 /*******************************/
 /********* Banner CSS **********/
 /*******************************/
+
+
 .banner {
     position: relative;
     width: 100%;
-    height: 100vh;
-    margin: 0 0;
-    padding: 90px 0;
+    height: 90vh;
+    padding: 0px 0;
     background: #00aef6;
 }
 
+.service .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .whyusBanner {
-    margin-top: 25vh;
+    margin-top: 0vh;
 }
 
 .banner .container {
@@ -960,7 +999,7 @@ a:focus {
 }
 
 .banner .section-header p {
-    color: #414141;
+    color: #231f20;
     background: transparent;
 }
 
@@ -997,6 +1036,7 @@ a:focus {
 }
 
 @media (max-width: 991.98px) {
+
     .banner .section-header h2 span {
         color: #231f20;
         font-size: 30px;
@@ -1007,6 +1047,13 @@ a:focus {
         color: #ffffff;
     }
 }
+
+@media (max-width: 320px) {
+    .banner {
+        margin-top: 100vh;
+    }
+}
+
 
 
 /*******************************/
@@ -1253,7 +1300,6 @@ a:focus {
 /******* Testimonial CSS *******/
 /*******************************/
 .testimonial {
-    margin-top: 10px;
     height: 100vh;
     position: relative;
     padding: 90px 0;
