@@ -160,7 +160,7 @@ a:focus {
 }
 
 .animationLogo {
-    width: 80vw;
+    width: 15vw;
     height: auto;
 }
 
@@ -184,8 +184,8 @@ a:focus {
     margin: 0;
     font-size: 45px;
     line-height: 0px;
-    font-weight: 700;
-    letter-spacing: 2px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
     transition: .5s;
     
 }
@@ -213,7 +213,7 @@ a:focus {
     }
     
     .navbar.nav-sticky {
-        padding: 10px 60px;
+        padding: 20px 60px;
         background: #ffffff !important;
     }
     
@@ -229,8 +229,8 @@ a:focus {
     .navbar-light .navbar-nav .nav-link:focus {
         padding: 10px 10px 8px 10px;
         color: #ffffff;
-        font-size: 15px;
-        font-weight: 500;
+        font-size: 17px;
+        font-weight: 530;
     }
     
     .navbar-light.nav-sticky .navbar-nav .nav-link,
@@ -258,9 +258,9 @@ a:focus {
     .navbar .navbar-brand {
         color: #00aef6;
         margin: 0;
-        font-size: 25px;
+        font-size: 30px;
         line-height: 0px;
-        font-weight: 700;
+        font-weight: 800;
         letter-spacing: 1px;
         transition: .5s;
     }
@@ -509,9 +509,10 @@ a:focus {
 .service {
     position: relative;
     width: 100%;
-    padding: 30px 0 30px 0;
+    padding: 60px 0 60px 0;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .service .service-item {
@@ -605,7 +606,7 @@ a:focus {
 .banner {
     position: relative;
     width: 100%;
-    padding: 30px 0;
+    padding: 60px 0;
     background: #00aef6;
     display: flex;
     justify-content: center;
