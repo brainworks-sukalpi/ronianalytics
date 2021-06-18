@@ -160,7 +160,7 @@ a:focus {
 }
 
 .animationLogo {
-    width: 1000px;
+    width: 80vw;
     height: auto;
 }
 
@@ -477,7 +477,6 @@ a:focus {
     top: 11px;
     right: 0;
     left: -30px;
-    background: #00aef6;
     z-index: -1;
 }
 
@@ -488,7 +487,6 @@ a:focus {
     height: 3px;
     top: 11px;
     left: 3px;
-    background: #00aef6;
     z-index: 1;
 }
 
@@ -814,7 +812,7 @@ a:focus {
 }
 
 .service .service-item:hover img {
-    width: 140px;
+    width: 130px;
     height: auto;
 }
 
@@ -829,8 +827,8 @@ a:focus {
 }
 
 .service .service-text h3 {
-    margin-bottom: 10px;
-    font-size: 20px;
+    margin-bottom: 7px;
+    font-size: 18px;
     font-weight: 600;
     transition: 1s;
 }
@@ -983,6 +981,11 @@ a:focus {
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.service .banner .container {
+    max-width: 950px;
+    text-align: center;
 }
 
 .whyusBanner {
