@@ -287,7 +287,7 @@ a:focus {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background: url(../img/Lines_Blue.png), linear-gradient(#ffffff, #ffffff);
+    background: url(../img/Pattern-01.png), linear-gradient(#ffffff, #ffffff);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -328,9 +328,9 @@ a:focus {
 
 .hero .hero-text h1 {
     color: #231f20;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
     margin-bottom: 15px;
 }
 
@@ -338,8 +338,8 @@ a:focus {
     margin: 0;
     height: 30px;
     color: #231f20;
-    font-size: 35px;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: 500;
 }
 
 .hero .hero-text .typed-text {
@@ -511,6 +511,11 @@ a:focus {
     width: 100%;
     padding: 60px 0 60px 0;
     display: flex;
+    background: url(../img/Pattern-01.png), url(../img/Pattern-01.png);
+    background-position-x: -77vw, 85vw;
+    background-position-y: 40vh, -70vh;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
     align-items: center;
     justify-content: center;
 }
@@ -535,7 +540,7 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #231f20;
+    border: 2px solid #231f20;
     background: #ffffff;
 }
 
@@ -607,7 +612,11 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 60px 0;
-    background: #00aef6;
+    background: url(../img/Lines_White.png), url(../img/Lines_White.png), #00aef6;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 400px, 400px;
+    background-position-x: -4vw, 85vw;
+    background-position-y: -10vh, 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -615,11 +624,6 @@ a:focus {
 
 .banner .container {
     max-width: 950px;
-    text-align: center;
-}
-
-.banner .container {
-    max-width: 750px;
     text-align: center;
 }
 
