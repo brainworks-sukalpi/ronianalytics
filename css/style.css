@@ -160,8 +160,12 @@ a:focus {
 }
 
 .animationLogo {
-    width: 15vw;
+    width: 20vw;
     height: auto;
+}
+
+.debug {
+    border: 2px solid black;
 }
 
 /**********************************/
@@ -535,7 +539,6 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 2px solid #231f20; */
     background: #ffffff;
 }
 
@@ -599,6 +602,130 @@ a:focus {
 }
 
 /*******************************/
+/********* Pricing CSS *********/
+/*******************************/
+.price {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.price .row {
+    padding: 0 15px;
+}
+
+.price .col-md-4 {
+    padding: 0;
+    margin: 0 0px;
+}
+
+.price .col-md-4:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    z-index: 1;
+}
+
+.price .price-item {
+    position: relative;
+    margin-bottom: 30px;
+    background: #ffffff;
+}
+
+.price .price-header,
+.price .price-body,
+.price .price-footer {
+    position: relative;
+    text-align: center;
+}
+
+.price .price-header {
+    padding: 45px 0 30px 0;
+    color: #231f20;
+}
+
+.price .price-item.featured-item .price-header {
+    color: #00aef6;
+}
+
+.price .price-title h2 {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.price .price-prices h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.price .price-prices img {
+    position: relative;
+    width: 120px;
+    height: auto;
+    color: #00aef6;
+    transition: .3s;
+}
+
+.price .price-prices h2 small {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 9px;
+    margin-left: -12px;
+}
+
+.price .price-prices h2 span {
+    margin-left: 1px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.price .price-item.featured-item h2 {
+    color: #00aef6;
+}
+
+.price .price-body {
+    padding: 0 0 20px 0;
+}
+
+.price .price-description p {
+    margin: 0;
+    padding: 0 20px;
+    list-style: none;
+}
+
+.price .price-item .price-action {
+    padding-bottom: 45px;
+}
+
+.price .price-item .price-action .btn {
+    color: #ffffff;
+    background: #231f20;
+    box-shadow: inset 0 0 0 50px #231f20;
+}
+
+.price .price-item .price-action .btn:hover {
+    color: #231f20;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #231f20;
+    border-color: #231f20;
+}
+
+.price .price-item.featured-item .price-action .btn {
+    color: #ffffff;
+    background: #00aef6;
+    box-shadow: inset 0 0 0 50px #00aef6;
+}
+
+.price .price-item.featured-item .price-action .btn:hover {
+    color: #00aef6;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #00aef6;
+    border-color: #00aef6;
+}
+
+/*******************************/
 /********* Banner CSS **********/
 /*******************************/
 
@@ -606,11 +733,15 @@ a:focus {
 .banner {
     position: relative;
     width: 100%;
-    padding: 60px 0;
+    padding: 10vh 0;
     background: #00aef6;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.aboutusSection {
+    padding: 25vh 0;
 }
 
 .banner .container {
