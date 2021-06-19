@@ -56,18 +56,43 @@
         }
     });
     
+    setTimeout(function(){ 
+        if ($('.hero .hero-text h2').length == 1) {
+            var typed_strings = $('.hero .hero-text .typed-text').text();
+            var typed = new Typed('.hero .hero-text h2', {
+                strings: typed_strings.split(', '),
+                typeSpeed: 100,
+                backSpeed: 20,
+                smartBackspace: false,
+                loop: false
+            });
+        }
+
+        $('#image').removeClass("heroImage");
+        $('#image1').attr("src","img/symbol.svg");
+        $('#image1').removeClass("imageRemoveClass");
+        $('#image1').addClass("imageAddClass");
+
+        // $('#homeLogo').removeClass("col-md-6");
+        // $('#homeLogo').addClass("col-md-3");
+
+        // $('#homeText').removeClass("col-md-6");
+        // $('#homeText').addClass("col-md-9");
+
+
+    }, 4000);
     
     // Typed Initiate
-    if ($('.hero .hero-text h2').length == 1) {
-        var typed_strings = $('.hero .hero-text .typed-text').text();
-        var typed = new Typed('.hero .hero-text h2', {
-            strings: typed_strings.split(', '),
-            typeSpeed: 100,
-            backSpeed: 20,
-            smartBackspace: false,
-            loop: true
-        });
-    }
+    // if ($('.hero .hero-text h2').length == 1) {
+    //     var typed_strings = $('.hero .hero-text .typed-text').text();
+    //     var typed = new Typed('.hero .hero-text h2', {
+    //         strings: typed_strings.split(', '),
+    //         typeSpeed: 100,
+    //         backSpeed: 20,
+    //         smartBackspace: false,
+    //         loop: true
+    //     });
+    // }
     
     
     // Skills
