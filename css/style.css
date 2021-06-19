@@ -481,6 +481,7 @@ a:focus {
     top: 11px;
     right: 0;
     left: -30px;
+    background: #00aef6;
     z-index: -1;
 }
 
@@ -491,6 +492,7 @@ a:focus {
     height: 3px;
     top: 11px;
     left: 3px;
+    background: #00aef6;
     z-index: 1;
 }
 
@@ -607,7 +609,7 @@ a:focus {
 .price {
     position: relative;
     width: 100%;
-    padding: 45px 0 15px 0;
+    padding: 60px 0 45px 0;
 }
 
 .price .row {
