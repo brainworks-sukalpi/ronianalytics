@@ -69,9 +69,9 @@
         }
 
         $('#image').removeClass("heroImage");
-        $('#image1').attr("src","img/symbol.svg");
-        $('#image1').removeClass("imageRemoveClass");
-        $('#image1').addClass("imageAddClass");
+        // $('#image1').attr("src","img/symbol.svg");
+        // $('#image1').removeClass("imageRemoveClass");
+        // $('#image1').addClass("imageAddClass");
 
         // $('#homeLogo').removeClass("col-md-6");
         // $('#homeLogo').addClass("col-md-3");

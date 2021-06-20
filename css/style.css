@@ -291,16 +291,46 @@ a:focus {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background: url(../img/Pattern-01.png), linear-gradient(#ffffff, #ffffff);
+    /* background: url(../img/Pattern-01.png), linear-gradient(#ffffff, #ffffff);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-12 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-12 video {
+    width: 80vw;
+}
+
+.hero .col-12 p {
+    text-align: center;
+    color: #231f20;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .hero .container-fluid {
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero .hero-image {
@@ -396,7 +426,7 @@ a:focus {
 
 .hero .hero-btn .btn {
     margin-top: 35px;
-    color: #EF233C;
+    color: #00aef6;
     background: #ffffff;
     box-shadow: inset 0 0 0 50px #ffffff;
 }
@@ -422,6 +452,10 @@ a:focus {
     }
     
     .hero .hero-text p {
+        font-size: 20px;
+    }
+
+    .hero .col-12 p {
         font-size: 20px;
     }
     
@@ -456,6 +490,10 @@ a:focus {
     .hero .hero-text p {
         font-size: 18px;
     }
+
+    .hero .col-12 p {
+        font-size: 18px;
+    }
     
     .hero .hero-text h1 {
         font-size: 35px;
@@ -474,6 +512,10 @@ a:focus {
 
 @media (max-width: 575.98px) {
     .hero .hero-text p {
+        font-size: 16px;
+    }
+
+    .hero .col-12 p {
         font-size: 16px;
     }
     
