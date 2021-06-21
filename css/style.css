@@ -657,6 +657,7 @@ a:focus {
 .section-header p {
     display: inline-block;
     margin: 0 30px;
+    margin-top: 20px;
     margin-bottom: 10px;
     padding-left: 15px;
     position: relative;
@@ -1125,6 +1126,7 @@ a:focus {
 }
 
 @media(max-width: 575.98px) {
+
     .team .team-text {
         padding: 0 15px;
     }
