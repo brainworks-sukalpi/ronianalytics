@@ -219,6 +219,7 @@ a:focus {
     .navbar.nav-sticky {
         padding: 20px 20px;
         background: #ffffff !important;
+        z-index: 100000;
     }
     
     .navbar .navbar-brand {
