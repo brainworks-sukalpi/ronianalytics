@@ -195,15 +195,16 @@ a:focus {
 }
 
 .navbar .navbar-brand img {
+    height: 50px;
     max-width: 100%;
-    max-height: 40px;
+    margin-right: 20px;
 }
 
 .navbar .dropdown-menu {
     margin-top: 0;
     border: 0;
     border-radius: 0;
-    background: #f8f9fa;
+    background: #ffffff;
 }
 
 @media (min-width: 992px) {
@@ -215,6 +216,11 @@ a:focus {
         border-bottom: 1px dashed rgba(256, 256, 256, .2);
         z-index: 9;
     }
+
+    .navbar img {
+        height: 30px;
+        width: auto;
+    }
     
     .navbar.nav-sticky {
         padding: 20px 20px;
@@ -224,6 +230,7 @@ a:focus {
     
     .navbar .navbar-brand {
         color: #ffffff;
+        font-size: 45px;
     }
     
     .navbar.nav-sticky .navbar-brand {
@@ -234,7 +241,7 @@ a:focus {
     .navbar-light .navbar-nav .nav-link:focus {
         padding: 10px 10px 8px 10px;
         color: #ffffff;
-        font-size: 17px;
+        font-size: 15px;
         font-weight: 500;
     }
     
@@ -263,11 +270,17 @@ a:focus {
     .navbar .navbar-brand {
         color: #00aef6;
         margin: 0;
-        font-size: 30px;
+        font-size: 25px;
         line-height: 0px;
         font-weight: 800;
         letter-spacing: 1px;
         transition: .5s;
+    }
+
+    .navbar .navbar-brand img {
+        height: 20px;
+        width: auto;
+        margin-right: 10px;
     }
     
     .navbar .navbar-nav {
@@ -291,12 +304,11 @@ a:focus {
     position: relative;
     width: 100%;
     height: 100vh;
+    padding: 20px;
     overflow: hidden;
-    /* background: url(../img/Pattern-01.png); 
-    background-position-x: left;
-    background-position-y: top;
+    background: url(../img/Pattern-01.png); 
     background-repeat: no-repeat;
-    background-size: 1000px; */
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -319,7 +331,7 @@ a:focus {
 }
 
 .hero .col-12 p {
-    text-align: center;
+    text-align: left;
     color: #00aef6;
     font-size: 30px;
     font-weight: 600;
@@ -343,16 +355,16 @@ a:focus {
     animation-name: example;
     animation-delay: 3s;
     animation-duration: 1s;
-    z-index: 1000;
+    z-index: 1;
 }
 
 .heroImage {
-    margin-right: -100vh;
+    margin-right: 0vw;
 }
 
 @keyframes example {
-    from {margin-right: -100vh;}
-    to {margin-right: 0vh;}
+    from {margin-right: 0vw;}
+    to {margin-right: 65vw;}
 }
 
 
@@ -362,12 +374,12 @@ a:focus {
 }
 
 .imageAddClass {
-    max-width: 80%;
-    max-height: 80%;
+    margin-right: 65vw;
 }
 
 .hero .hero-content {
     position: relative;
+    width: 100%;
     padding-left: 0;
     display: flex;
     align-items: flex-start;
@@ -388,7 +400,7 @@ a:focus {
     font-weight: 600;
     margin-bottom: 15px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -408,8 +420,8 @@ a:focus {
 
 .hero .hero-text h2 {
     text-align: left;
-    margin: 30px 0;
-    height: 30px;
+    margin: 20px 0;
+    /* height: 30px; */
     color: #231f20;
     font-size: 90px;
     font-weight: 800;
@@ -421,6 +433,11 @@ a:focus {
 .hero .hero-text .typed-text {
     display: none;
 }
+
+.hero .hero-text .typed-text1 {
+    display: none;
+}
+
 
 .hero .hero-text .typed-cursor {
     display: none;
@@ -458,10 +475,32 @@ a:focus {
     
     .hero .hero-text p {
         font-size: 20px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .hero .col-12 p {
         font-size: 20px;
+
+    }
+
+    .col-12 video {
+        width: 20vw;
+    }
+
+    .heroImage {
+        margin-right: 0;
+    }
+    
+    @keyframes example {
+        from {margin-right: 0;}
+        to {margin-right: 60vw;}
+    }
+    
+    .imageAddClass {
+        margin-right: 60vw;
     }
     
     .hero .hero-text h1 {
@@ -471,6 +510,10 @@ a:focus {
     .hero .hero-text h2 {
         font-size: 45px;
         height: 25px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .hero .hero-btn .btn {
@@ -483,6 +526,9 @@ a:focus {
     .hero {
         padding-top: 60px;
         padding-bottom: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .hero,
@@ -494,10 +540,32 @@ a:focus {
     
     .hero .hero-text p {
         font-size: 18px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .col-12 video {
+        width: 40vw;
+    }
+
+    .heroImage {
+        margin-right: 0;
+    }
+    
+    @keyframes example {
+        from {margin-right: 0;}
+        to {margin-right: 0;}
+    }
+    
+    .imageAddClass {
+        margin-right: 0;
     }
 
     .hero .col-12 p {
         font-size: 18px;
+        text-align: center;
     }
     
     .hero .hero-text h1 {
@@ -507,6 +575,10 @@ a:focus {
     .hero .hero-text h2 {
         font-size: 27px;
         height: 22px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .hero .hero-btn .btn {
@@ -518,6 +590,10 @@ a:focus {
 @media (max-width: 575.98px) {
     .hero .hero-text p {
         font-size: 16px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .hero .col-12 p {
@@ -527,10 +603,31 @@ a:focus {
     .hero .hero-text h1 {
         font-size: 30px;
     }
+
+    .col-12 video {
+        width: 40vw;
+    }
+
+    .heroImage {
+        margin-right: 0;
+    }
+    
+    @keyframes example {
+        from {margin-right: 0;}
+        to {margin-right: 0;}
+    }
+    
+    .imageAddClass {
+        margin-right: 0;
+    }
     
     .hero .hero-text h2 {
         font-size: 20px;
         height: 18px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .hero .hero-btn .btn {
@@ -546,6 +643,15 @@ a:focus {
 .section-header {
     position: relative;
     margin-bottom: 25px;
+}
+
+.section-header h5 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.text {
+    display: none;
 }
 
 .section-header p {
