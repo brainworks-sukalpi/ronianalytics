@@ -72,6 +72,10 @@
     });
     
     setTimeout(function(){ 
+
+        $('#homeLogo').removeClass("heroImage");
+        $('#homeLogo').addClass("imageAddClass");
+
         if ($('.hero .hero-text h2').length == 1) {
             var typed_strings = $('.hero .hero-text .typed-text').text();
             var typed = new Typed('.hero .hero-text h2', {
@@ -82,9 +86,6 @@
                 loop: false
             });
         }
-
-        $('#homeLogo').removeClass("heroImage");
-        $('#homeLogo').addClass("imageAddClass");
         
         // $('#image').attr("src","img/symbol.svg");
         // $('#image1').removeClass("imageRemoveClass");

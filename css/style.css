@@ -667,8 +667,12 @@ a:focus {
         width: 80vw;
         text-align: center;
         display: flex;
-        align-items: center;
+        /* align-items: center; */
         justify-content: center;
+    }
+
+    .heroTextPara {
+        width: 100px;
     }
 
     .heroImage {
@@ -720,7 +724,7 @@ a:focus {
         width: 80vw;
         text-align: center;
         display: flex;
-        align-items: center;
+        /* align-items: center; */
         justify-content: center;
     }
     
@@ -733,6 +737,10 @@ a:focus {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .heroTextPara {
+        width: 170px;
     }
 
     .heroImage {
