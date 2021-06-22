@@ -307,7 +307,6 @@ a:focus {
     background: url(../img/Sample\ 02.png); 
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: screen;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -783,48 +782,12 @@ a:focus {
 }
 
 .section-header h5 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
 }
 
 .text {
     display: none;
-}
-
-.section-header h5 {
-    display: inline-block;
-    margin: 0 30px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding-left: 15px;
-    position: relative;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    background: #00aef6;
-}
-
-.section-header h5::before {
-    position: absolute;
-    content: "";
-    height: 1px;
-    top: 11px;
-    right: 0;
-    left: -30px;
-    background: #ffffff;
-    z-index: -1;
-}
-
-.section-header h5::after {
-    position: absolute;
-    content: "";
-    width: 3px;
-    height: 1px;
-    top: 11px;
-    left: 3px;
-    background: #ffffff;
-    z-index: 1;
 }
 
 .section-header p {
@@ -861,6 +824,27 @@ a:focus {
     left: 3px;
     background: #00aef6;
     z-index: 1;
+}
+
+.banner .section-header h5 {
+    text-transform: uppercase;
+    display: inline;
+    color: #ffffff;
+    background: #00aef6;
+}
+
+.banner .section-header p {
+    position: relative;
+    color: #ffffff;
+    background: #00aef6;
+}
+
+.banner .section-header p::before {
+    background: #ffffff;
+}
+
+.banner .section-header p::after {
+    background: #ffffff;
 }
 
 .section-header h2 {
@@ -1144,15 +1128,6 @@ a:focus {
 
 .banner .section-header {
     margin-bottom: 20px;
-}
-
-.banner .section-header p {
-    color: #231f20;
-    background: transparent;
-}
-
-.banner .section-header p::after {
-    display: none;
 }
 
 .banner .section-header h2 {
