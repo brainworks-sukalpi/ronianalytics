@@ -97,11 +97,11 @@
         // $('#homeText').addClass("col-md-9");
 
         setTimeout(function() {
-            if ($('.hero .hero-text p').length == 1) {
+            if ($('.hero .hero-text .text1').length == 1) {
                 var typed_strings = $('.hero .hero-text .typed-text1').text();
-                var typed = new Typed('.hero .hero-text p', {
+                var typed = new Typed('.hero .hero-text .text1', {
                     strings: typed_strings.split(', '),
-                    typeSpeed: 100,
+                    typeSpeed: 40,
                     backSpeed: 20,
                     smartBackspace: false,
                     loop: false
