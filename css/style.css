@@ -484,11 +484,11 @@ a:focus {
     }
 
     .heroImage {
-        margin-right: -70vw;
+        margin-right: -50vw;
     }
     
     @keyframes example {
-        from {margin-right: -70vw;}
+        from {margin-right: -50vw;}
         to {margin-right: 0vw;}
     }
     
@@ -517,7 +517,7 @@ a:focus {
     }
 
     .hero .hero-text p {
-        width: 80%;
+        width: 100%;
         height: 100px;
         padding: 0 0px;
         margin: 0;
@@ -558,11 +558,11 @@ a:focus {
     }
 
     .heroImage {
-        margin-right: -70vw;
+        margin-right: -50vw;
     }
     
     @keyframes example {
-        from {margin-right: -70vw;}
+        from {margin-right: -50vw;}
         to {margin-right: 0vw;}
     }
     
@@ -591,7 +591,7 @@ a:focus {
     }
 
     .hero .hero-text p {
-        width: 50vw;
+        width: 100%;
         height: 60px;
         font-size: 20px;
         text-align: left;
