@@ -83,10 +83,10 @@
             });
         }
 
-        $('#image').removeClass("heroImage");
-        $('#image').addClass("imageAddClass");
+        $('#homeLogo').removeClass("heroImage");
+        $('#homeLogo').addClass("imageAddClass");
         
-        $('#image').attr("src","img/symbol.svg");
+        // $('#image').attr("src","img/symbol.svg");
         // $('#image1').removeClass("imageRemoveClass");
         // $('#image1').addClass("imageAddClass");
 
