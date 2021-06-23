@@ -212,7 +212,7 @@ a:focus {
         position: absolute;
         width: 100%;
         padding: 30px 30px;
-        background: #00aef6 !important;
+        background: #231f20 !important;
         border-bottom: 1px dashed rgba(256, 256, 256, .2);
         z-index: 9;
     }
