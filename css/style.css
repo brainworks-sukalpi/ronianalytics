@@ -174,7 +174,7 @@ a:focus {
 .navbar {
     position: relative;
     transition: .5s;
-    z-index: 999;
+    z-index: 100000;
 }
 
 .navbar.nav-sticky {
@@ -306,6 +306,7 @@ a:focus {
 .hero {
     position: relative;
     width: 100%;
+    min-height: 100vh;
     overflow: hidden;
     background: url(../img/Sample\ 02.png); 
     background-repeat: no-repeat;
@@ -430,7 +431,6 @@ a:focus {
 
 @media (min-width: 992px) {
     .hero {
-        height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -956,6 +956,7 @@ a:focus {
 .price {
     position: relative;
     width: 100%;
+    min-height: 100vh;
     padding: 60px 0 45px 0;
 }
 
@@ -1107,6 +1108,7 @@ a:focus {
 .banner {
     position: relative;
     width: 100%;
+    min-height: 100vh;
     padding: 100px 50px;
     background: #00aef6;
     display: flex;
@@ -1174,7 +1176,11 @@ a:focus {
 .team {
     position: relative;
     width: 100%;
+    min-height: 100vh;
     padding: 45px 0 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .team .team-item {
@@ -1319,6 +1325,10 @@ a:focus {
     position: relative;
     padding: 90px 0;
     background: #00aef6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .testimonial .container {
