@@ -348,10 +348,6 @@ a:focus {
 
 .hero .hero-image {
     position: relative;
-    animation: ease-out;
-    animation-name: example;
-    animation-delay: 3s;
-    animation-duration: 1s;
     z-index: 1;
 }
 
@@ -531,6 +527,8 @@ a:focus {
         align-items: center;
         justify-content: center;
     }
+
+    
 
     .hero .row {
         display: flex;
@@ -767,7 +765,6 @@ a:focus {
         letter-spacing: 0;
     }
 }
-
 
 /*******************************/
 /******* Section Header ********/
@@ -1116,10 +1113,6 @@ a:focus {
     align-items: center;
 }
 
-.aboutusSection {
-    padding: 25vh 0;
-}
-
 .banner .container {
     max-width: 950px;
     text-align: center;
@@ -1141,6 +1134,49 @@ a:focus {
 .banner .banner-text p {
     font-size: 18px;
     color: #ffffff;
+    margin-bottom: 100px;
+}
+
+.banner .vidDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 40vw;
+    height: auto;
+}
+
+@media (max-width: 575.98px) {
+    .banner video{
+        max-width: 80vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner video{
+        max-width: 80vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .banner video{
+        max-width: 80vw;
+        height: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .banner video{
+        max-width: 50vw;
+        height: auto;
+    }
 }
 
 .banner .banner-text .btn {
