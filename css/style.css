@@ -1480,7 +1480,7 @@ a:focus {
     height: 1px;
     top: 0;
     left: 25%;
-    background: rgba(256, 256, 256, .2);
+    background: black;
 }
 
 .footer .copyright p {
