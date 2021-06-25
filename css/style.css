@@ -1134,6 +1134,12 @@ a:focus {
 .banner .banner-text p {
     font-size: 18px;
     color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutusPara {
     margin-bottom: 100px;
 }
 
@@ -1177,6 +1183,18 @@ a:focus {
         max-width: 50vw;
         height: auto;
     }
+}
+
+.col-lg-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner .banner-text .btn {
