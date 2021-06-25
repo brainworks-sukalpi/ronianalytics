@@ -191,7 +191,10 @@ a:focus {
     font-weight: 900;
     letter-spacing: 0.5px;
     transition: .5s;
-    
+}
+
+.navbar .navbar-brand:hover {
+    color: #d1d3d4;
 }
 
 .navbar .navbar-brand img {
@@ -240,7 +243,7 @@ a:focus {
     .navbar-light .navbar-nav .nav-link,
     .navbar-light .navbar-nav .nav-link:focus {
         padding: 10px 10px 8px 10px;
-        color: #ffffff;
+        color: #d1d3d4;
         font-size: 15px;
         font-weight: 500;
     }
@@ -344,24 +347,11 @@ a:focus {
 
 .hero .hero-image {
     position: relative;
-    /* animation: ease-out;
+    animation: ease-out;
     animation-name: example;
     animation-delay: 3s;
-    animation-duration: 1s; */
+    animation-duration: 1s;
     z-index: 1;
-}
-
-.heroImage {
-    margin-right: -100vw;
-}
-
-@keyframes example {
-    from {margin-right: -100vw;}
-    to {margin-right: 0vw;}
-}
-
-.imageAddClass {
-    margin-right: 0vw;
 }
 
 .imageRemoveClass {
