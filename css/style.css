@@ -1192,11 +1192,17 @@ a:focus {
     position: relative;
     width: 100%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 }
 
 .team .team-img img {
     position: relative;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
     transition: .5s;
 }
 
@@ -1218,7 +1224,7 @@ a:focus {
     font-weight: 600;
     margin-top: 5px;
     margin-bottom: 5px;
-    transition: 1s;
+    transition: .7s;
     z-index: 2000;
 }
 
@@ -1233,7 +1239,7 @@ a:focus {
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
-    transition: 1s;
+    transition: .7s;
     z-index: 2000;
 }
 
@@ -1256,16 +1262,19 @@ a:focus {
     margin-right: 5px;
 }
 
-.team .team-item:hover {
+.team .team-item:hover .team-text {
     box-shadow: inset 0px 800px 0 800px #00aef6;
 }
 
 .team .team-item:hover .team-img img {
     z-index: 0;
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
 }
 
-.team .team-item:hover .team-text h2,
+.team .team-item:hover .team-text h2 {
+    color: #231f20;
+}
+
 .team .team-item:hover .team-text h4,
 .team .team-item:hover .team-text p {
     color: #ffffff;
@@ -1415,9 +1424,9 @@ a:focus {
     color: #231f20;
 }
 
-.footer .footer-info h3 {
+.footer .footer-info h4 {
     margin-bottom: 25px;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     color: #231f20;
 }
@@ -1430,7 +1439,7 @@ a:focus {
 
 .footer .footer-menu p {
     color: #231f20;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 20px;
     padding: 0 15px;
