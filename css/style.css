@@ -1511,6 +1511,10 @@ a:focus {
 .footer {
     position: relative;
     background: #d1d3d4;
+    /* min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
 .footer .container-fluid {
