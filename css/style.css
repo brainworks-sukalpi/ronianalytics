@@ -172,7 +172,8 @@ a:focus {
 /*********** Nav Bar CSS **********/
 /**********************************/
 .navbar {
-    position: relative;
+    position: fixed;
+    width: 100%;
     transition: .5s;
     z-index: 100000;
 }
@@ -273,7 +274,7 @@ a:focus {
     .navbar .navbar-brand {
         color: #00aef6;
         margin: 0;
-        font-size: 25px;
+        font-size: 35px;
         line-height: 0px;
         font-weight: 800;
         letter-spacing: 1px;
@@ -298,6 +299,46 @@ a:focus {
         box-shadow: none;
     }
 }
+
+@media (max-width: 768px) {   
+    
+    .navbar .navbar-brand {
+        color: #00aef6;
+        margin: 0;
+        font-size: 30px;
+        line-height: 0px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        transition: .5s;
+    }
+
+    .navbar .navbar-brand img {
+        height: 20px;
+        width: auto;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 344px) {   
+    
+    .navbar .navbar-brand {
+        color: #00aef6;
+        margin: 0;
+        font-size: 25px;
+        line-height: 0px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        transition: .5s;
+    }
+
+    .navbar .navbar-brand img {
+        height: 20px;
+        width: auto;
+        margin-right: 10px;
+    }
+}
+
+
 
 
 /*******************************/
